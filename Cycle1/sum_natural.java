@@ -5,7 +5,7 @@ class sum_natural
     {
      Scanner obj=new Scanner(System.in);
      int n,i,s=0;
-     System.out.println("Enter the number");
+     System.out.println("Enter an integer");
      n=obj.nextInt();
      for(i=1;i<=n;i++)
       {
