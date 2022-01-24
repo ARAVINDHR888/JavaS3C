@@ -28,7 +28,7 @@ class trace
            }
        System.out.println();
         }
-     System.out.println("Sum of diagonal elements = "+sum);
+     System.out.println("Trace of the matrix = "+sum);
        }
      else
      System.out.println("Matrix is not a square matrix");
