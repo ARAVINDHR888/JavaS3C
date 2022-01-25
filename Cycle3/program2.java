@@ -33,6 +33,6 @@ class program2
 	         a = a/10;
 	     }
 	 
-	     System.out.println("No of digits = "+res);
+	     System.out.println("Sum of digits = "+res);
 	 }
 }
