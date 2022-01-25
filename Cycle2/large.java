@@ -16,7 +16,7 @@ class large
      large=a[0][0];
      for(i=0;i<r;i++)
       {
-          for(j=0;j<r;j++)
+          for(j=0;j<c;j++)
           {
             if(large<a[i][j])
             large=a[i][j];
