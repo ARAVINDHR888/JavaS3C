@@ -2,7 +2,8 @@ import java.util.*;
 public class employee 
 {
     String name ;
-    int empno,pn;
+    int empno;
+    long pn;
     void EnterDetails()  
       {
         Scanner obj = new Scanner(System.in);
@@ -13,7 +14,7 @@ public class employee
         empno = obj.nextInt();
         
         System.out.print("Enter Phone no :"); 
-        pn = obj.nextInt();
+        pn = obj.nextLong();
       }
        
     void PrintDetails()
