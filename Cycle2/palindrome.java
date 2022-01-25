@@ -1,20 +1,30 @@
-import java.util.*;   
-class palindrome
-{  
-   public static void main(String args[])  
-   {  
-      String original, reverse = "";  
-      int length,i;
-      Scanner obj = new Scanner(System.in);   
-      System.out.println("Enter a string to check if it is a palindrome");  
-      original = obj.nextLine();   
-      length = original.length();   
-      for ( i = length - 1; i >= 0; i-- )  
-         reverse = reverse + original.charAt(i);  
-      if (original.equals(reverse))  
-         System.out.println("Entered string is a palindrome.");  
-      else  
-         System.out.println("Entered string is not a palindrome.");   
-   }  
-}  
-
+import java.util.*;
+class palindrome 
+{
+    public static void main(String args[])
+    {
+            Scanner obj = new Scanner(System.in);
+            int i,flag=0,len;
+            System.out.println("Enter the string:");
+            String str=obj.nextLine();
+            len=str.length();
+            char a[]=new char[len+1];
+            for(i=0;i<len;i++)
+            {
+                a[i]=str.charAt(i);
+            }
+            for(i=0;a[i]!='\0';i++)
+            {
+                if(a[i]!=a[len-i-1])
+                {
+                    flag=1;
+                    break;
+                }
+            }
+        
+        if(flag==1)
+            System.out.println("Entered string is not a palindrome");
+        else 
+        System.out.println("Entered string is a palindrome");
+    }
+}
