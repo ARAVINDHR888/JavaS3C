@@ -4,7 +4,7 @@ class frequency
     public static void main(String args[])
     {
         Scanner obj=new Scanner(System.in);
-        int i,flag=0,len,c=0;
+        int i,len,c=0;
         System.out.println("Enter the string");
         String str=obj.nextLine();
         len=str.length();
