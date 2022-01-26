@@ -5,15 +5,15 @@ class program4
 	{ 
        Scanner obj = new Scanner(System.in);
        System.out.print("Enter radius of circle :");
-       int r = obj.nextInt();
+       double r = obj.nextDouble();
        
        System.out.println("Enter length and breadth of rectangle :");
-       int l = obj.nextInt();
-       int b = obj.nextInt();
+       double l = obj.nextDouble();
+       double b = obj.nextDouble();
        
        System.out.println("Enter base and height of triangle :");
-       float ba = obj.nextInt();
-       float h = obj.nextInt();
+       float ba = obj.nextFloat();
+       float h = obj.nextFloat();
        
        shapes obj1 = new shapes();
        obj1.area(r);
@@ -24,13 +24,13 @@ class program4
 
 class shapes
 {
-    void area(int rad)
+    void area(double rad)
     {
         double Area = 3.14*rad*rad;
         System.out.println("Area of circle = "+Area);
     }
     
-    void area(int len,int br)
+    void area(double len,double br)
     {
         double Area = len*br;
         System.out.println("Area of rectangle = "+Area);
