@@ -1,43 +1,48 @@
 import java.util.*;
 class transpose
 {
-    public static void main(String args[])
-    {
-     Scanner obj=new Scanner(System.in);
-     int i,j,r,c;
-     System.out.println("Enter the number of rows and columns");
-     r=obj.nextInt();
-     c=obj.nextInt();
-     int original[][]=new int[r][c];
-     int transpose[][]=new int[r][c];
-     System.out.println("Enter the elements of matrix");
-     for(i=0;i<r;i++)
-     for(j=0;j<c;j++)
-       original[i][j]=obj.nextInt(); 
-         for(i=0;i<r;i++)
-         {
-         for(j=0;j<c;j++)
-         {
-           transpose[i][j]=original[j][i];
-         }
-        } 
-     System.out.println("Matrix before");
-     for(i=0;i<r;i++)
+    public static void main(String args [])
      {
-       for(j=0;j<c;j++)
-       {
-         System.out.print(original[i][j]+ " ");
-       }
-         System.out.println();
-    }
-    System.out.println("Matrix after");
-    for(i=0;i<r;i++)
-    {
-      for(j=0;j<c;j++)
-      {
-        System.out.print(transpose[i][j]+ " ");
-      }
-        System.out.println();
+         
+         int i,j,r,c;
+         Scanner obj = new Scanner(System.in);
+         System.out.print("Enter number of rows ");
+         r = obj.nextInt();
+         System.out.print("Enter number of columns ");
+         c = obj.nextInt();
+         int a[][] = new int[20][20];
+         int b[][] = new int[20][20];
+         
+         System.out.println("Enter elements of array");
+         for(i=0;i<r;i++)
+          for(j=0;j<c;j++)
+          
+          {
+              a[i][j] = obj.nextInt();
+          }
+   
+         System.out.println("Entered Matrix");
+         for(i=0;i<r;i++)
+          {
+          System.out.print("\n");
+          for(j=0;j<c;j++)
+              System.out.print(a[i][j]+ "\t");
+          }
+   
+         for(i=0;i<r;i++)
+          for(j=0;j<c;j++)
+          
+          {
+              b[j][i] = a[i][j];
+          }
+
+        System.out.println("\nTransposed Matrix");
+        for(i=0;i<c;i++)
+         { 
+          System.out.print("\n");
+          for(j=0;j<r;j++)
+              System.out.print(b[i][j]+"\t");
+         }
      }
-   }  
-}  
+    
+ }
