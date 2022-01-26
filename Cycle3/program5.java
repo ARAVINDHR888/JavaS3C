@@ -5,11 +5,11 @@ class program5
 	{ 
        Scanner obj = new Scanner(System.in);
        System.out.print("Enter radius of circle :");
-       int r = obj.nextInt();
+       double r = obj.nextDouble();
        
        System.out.print("Enter length and breadth of rectangle :");
-       int l = obj.nextInt();
-       int b = obj.nextInt();
+       double l = obj.nextDouble();
+       double b = obj.nextDouble();
        
        perimeter obj1 = new perimeter(r);
        obj1 = new perimeter(l,b);
@@ -18,13 +18,13 @@ class program5
 
 class perimeter
 {
-    perimeter(int rad)
+    perimeter(double rad)
     {
         double Perimeter = 3.14*2*rad;
         System.out.println("Perimeter of circle = "+Perimeter);
     }
     
-    perimeter(int len,int br)
+    perimeter(double len,double br)
     {
         double Perimeter = 2*(len+br);
         System.out.println("Perimeter of rectangle = "+Perimeter);
