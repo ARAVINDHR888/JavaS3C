@@ -1,33 +1,33 @@
 import java.util.*;
 class armstrong
 {
-    public static void main(String  args[])
+    public static void main(String agrs[])
     {
-        Scanner obj=new Scanner(System.in);
-        int count=0,n,d,D=0,n1,i;
-        System.out.println("Enter a number");
-        n=obj.nextInt();
-        n1=n;
-        while(n>0)
+        int count = 0, n, orgnum, i,r,revnum=0;
+        Scanner obj = new Scanner(System.in);
+        System.out.println("Enter the number:");
+        n= obj.nextInt();
+        orgnum=n;
+        while(n!=0)
         {
             n=n/10;
             count=count+1;
         }
-        n=n1;
-        while(n>0)
+        n= orgnum;
+        while(n!=0)
         {
-            int multi=1;
-            d=n%10;
+            int multi =1;
+            r = n%10;
             for(i=0;i<count;i++)
             {
-                multi=multi*d;
+                multi=multi*r;
             }
             n=n/10;
-            D=D+multi;
+            revnum=revnum+multi ;
         }
-        if(n1==D)
-        System.out.println("This is an Armstrong number");
+        if(orgnum==revnum)
+             System.out.println("The given number is an armstrong number");
         else
-        System.out.println("This is not an Armstrong number");
+             System.out.println("The given number is not an armstrong number");
     }
 }
