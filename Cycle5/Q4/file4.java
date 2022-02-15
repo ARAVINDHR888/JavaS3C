@@ -2,7 +2,8 @@ import java.io.*;
 import java.util.*;
 class file4
 {
-  public static void main(String[] args) throws Exception
+  public static void main(String args[]) 
+  throws Exception
    {
   try
   {
@@ -19,6 +20,7 @@ class file4
         {
             a = st.nextToken();
             int b = Integer.parseInt(a);
+            System.out.println(b);
             sum = sum+b;
         }
    }
