@@ -51,7 +51,7 @@ class shapes extends Frame implements ItemListener
 		if(clr.equals("Rectangle"))
 		{ 
 			g.setColor(Color.green);
-			g.drawRect(5,40,90,55);
+			g.drawRect(20,40,90,55);
 			
 		}
 		if(clr.equals("Oval"))
